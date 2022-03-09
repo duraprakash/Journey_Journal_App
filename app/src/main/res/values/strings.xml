@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Journey Journal</string>
+
+    <string name="splash_text">All rights are reserved.</string>
+    <string name="welcome_back_text">Welcome back!</string>
+    <string name="Login_continue_text">Login to continue with</string>
+    <string name="Journey_journal_text">Your Journey Journal App</string>
+    <string name="email">Email Address:</string>
+    <string name="password">Password:</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="send">Send</string>
+    <string name="reset_text">A reset link will be sent to your Email.</string>
+    <string name="read_agree">Read and agree to Terms and Conditions.</string>
+
+
+</resources>

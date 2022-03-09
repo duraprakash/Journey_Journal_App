@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+android:id="@+id/drawer_layout"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#115173"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#143D54"
+        android:padding="8dp">
+        <LinearLayout
+            android:id="@+id/layout_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:background="@drawable/rounded"
+            android:backgroundTint="#022C43">
+            <ImageView
+                android:id="@+id/imagemenu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_baseline_menu_24" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:backgroundTint="@color/white"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/booklogo"
+                android:layout_marginLeft="20dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Journey Journal"
+                android:textColor="#115173"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imgsearch"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/app_name"
+                android:layout_marginStart="40dp"
+                android:src="@drawable/ic_baseline_search_24" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hey User !"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/full_round_circle"
+                    android:layout_marginRight="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="23"
+                        android:textStyle="bold|italic"
+                        android:textSize="14sp"
+                        android:textColor="#000"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="feb"
+                        android:textStyle="bold|italic"
+                        android:textSize="14sp"
+                        android:textColor="#000"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="1dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/full_round_circle"
+                    android:layout_marginLeft="50dp">
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/icon_github"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="16dp"
+                        android:padding="8dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:orientation="vertical"
+        android:padding="8dp">
+<!--        this is the content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image1"
+                android:backgroundTint="@color/white"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/profile_female1"
+                android:layout_marginLeft="12dp"
+                app:civ_border_width="0dp"
+                app:civ_border_color="#FFF"
+                android:layout_gravity="center"/>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="23 February 2022- Tue"
+                        android:textSize="12sp"
+                        android:textColor="#115173"
+                        android:layout_gravity="end"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Title"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#115173"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="#115173"
+                        android:layout_marginTop="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Location"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#115173"
+                            android:layout_marginTop="5dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="end">
+                            <ImageView
+                                android:id="@+id/imgEdit"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/icon_edit"
+                                android:layout_gravity="center"/>
+
+                            <ImageView
+                                android:id="@+id/imgDelete"
+                                android:layout_width="30dp"
+                                android:layout_height="20dp"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/icon_delete"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="20dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image2"
+                android:backgroundTint="@color/white"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/profile_male1"
+                android:layout_marginLeft="12dp"
+                app:civ_border_width="0dp"
+                app:civ_border_color="#FFF"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="23 February 2022- Tue"
+                        android:textSize="12sp"
+                        android:textColor="#115173"
+                        android:layout_gravity="end"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Title"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#115173"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="#115173"
+                        android:layout_marginTop="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Location"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#115173"
+                            android:layout_marginTop="5dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="end">
+                            <ImageView
+                                android:id="@+id/imgEdit1"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/icon_edit"
+                                android:layout_gravity="center"/>
+
+                            <ImageView
+                                android:id="@+id/imgDelete1"
+                                android:layout_width="30dp"
+                                android:layout_height="20dp"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/icon_delete"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="20dp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/icon_add"
+        android:contentDescription="Add"
+        android:backgroundTint="@color/white"
+        android:layout_margin="16dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:menu="@menu/bottom_items"
+        android:elevation="2dp"
+        android:layout_alignParentBottom="true"
+        app:itemIconSize="30dp"
+        app:labelVisibilityMode="unlabeled"
+        android:background="#022C43"
+        app:itemRippleColor="@color/yellow"
+        app:itemIconTint="#fff">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/navigation_menu"
+        android:layout_gravity="start">
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
